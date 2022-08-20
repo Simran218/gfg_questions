@@ -1,4 +1,16 @@
- public ArrayList <Integer> bottomView(Node root)
+ class Pair{
+    int key;
+    Node node;
+       Pair(int key,Node node){
+           this.key=key;
+           this.node=node;
+       }
+}
+
+class Solution
+{
+    //Function to return a list containing the bottom view of the given tree.
+    public ArrayList <Integer> bottomView(Node root)
     {
         // Code here
          ArrayList<Integer>arr=new ArrayList<>();
@@ -38,4 +50,5 @@
               }
          return arr;
         
+    }
     }
